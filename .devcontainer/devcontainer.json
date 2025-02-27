@@ -1,0 +1,48 @@
+{
+    "name": "laravel-starter-kit",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/var/www/html",
+    "initializeCommand": "cp -u .env.example .env",
+    "forwardPorts": [80, 8080, 5173, 3306],
+    "customizations": {
+        "vscode": {
+            "settings": {
+                // Editor settings
+                "editor.formatOnSave": true,
+                "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+                // Language specific settings
+                "[php]": {
+                    "editor.defaultFormatter": "open-southeners.laravel-pint"
+                },
+                "[blade]": {
+                    "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+                },
+
+                // Extension settings
+                "laravel-pint.enable": true
+            },
+            "extensions": [
+                "EditorConfig.EditorConfig",
+                "esbenp.prettier-vscode",
+                "ecmel.vscode-html-css",
+                "bradlc.vscode-tailwindcss",
+                "dotenv.dotenv-vscode",
+                "bmewburn.vscode-intelephense-client",
+                "neilbrayfield.php-docblocker",
+                "MehediDracula.php-namespace-resolver",
+                "phiter.phpstorm-snippets",
+                "DEVSENSE.composer-php-vscode",
+                "laravel.vscode-laravel",
+                "shufo.vscode-blade-formatter",
+                "austenc.laravel-blade-spacer",
+                "open-southeners.laravel-pint",
+                "georgykurian.laravel-ide-helper",
+                "m1guelpf.better-pest",
+                "dansysanalyst.pest-snippets",
+                "christian-kohler.npm-intellisense"
+            ]
+        }
+    }
+}

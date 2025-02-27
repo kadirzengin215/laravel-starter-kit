@@ -1,0 +1,15 @@
+/.devcontainer
+/.github
+/node_modules
+/tests
+/vendor
+.dockerignore
+.editorconfig
+.gitattributes
+.gitignore
+.docker-compose.yml
+LICENSE
+phpunit.xml
+pint.json
+README.md
+vite.config.js
